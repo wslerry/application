@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+          box-sizing:border-box;
+        }
+
+body {
+  font-family: Inconsolata, Consolas, "Liberation Mono", Menlo, Monaco, "Courier New", Courier, monospace;
+  line-height: 1.5em;
+  overflow-x:hidden;
+  font-size: 12px;
+  margin: 2em auto;
+  padding: 1.2em;
+  max-width: 780px;
+  line-height: 1.9em;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  -moz-font-feature-settings: "kern" 1, "liga" 1;
+  -ms-font-feature-settings: "kern" 1, "liga" 1;
+  -o-font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+.node {
+  cursor: pointer;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 2.5px;
+  font-weight: bold;
+  color: #000000;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+#title{
+  font-size: 18px;
+  font-weight: bold;
+}
+footer {
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+a:hover{
+  color: #3182bd;
+  opacity: 1;
+  border: none;
+}

@@ -1,6 +1,4 @@
-var width = 900,
-    height = 500,
-    root;
+var width = 700, height = 500, root;
 
 var force = d3.layout.force()
     .size([width, height])
@@ -10,9 +8,8 @@ var div = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+var svg = d3.select("#svgviz").append("svg")
+    .attr("viewBox", '0 -50 700 680')
 
 var link = svg.selectAll(".link"),
     node = svg.selectAll(".node");
@@ -67,8 +64,8 @@ function update() {
           .duration(200)
           .style("opacity", .9);
         div.html(d.name)
-        .style("left", (d3.mouse(this)[0]+10) + "px")
-        .style("top", (d3.mouse(this)[1]) + "px")
+        .style("left", (d3.event.pageX - 20) + "px")
+        .style("top", (d3.event.pageY - 28) + "px")
       })
       .on("mouseout", function(d) {
         div.transition()
