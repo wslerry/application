@@ -9,7 +9,7 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);
 
 var svg = d3.select("#svgviz").append("svg")
-    .attr("viewBox", '0 -50 700 680')
+    .attr("viewBox", '0 -50 700 900')
 
 var link = svg.selectAll(".link"),
     node = svg.selectAll(".node");
